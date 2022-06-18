@@ -1,0 +1,22 @@
+.centered_plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  margin-top: 20px;  
+}
+.plus{
+height: 40px;
+width: 40px;
+
+}
+.plus:hover{
+    color:rgb(57, 228, 57) ;
+}
+button{
+    border: none;
+    background: none;
+}
+button:disabled{
+    cursor: not-allowed;
+    color: red;
+}

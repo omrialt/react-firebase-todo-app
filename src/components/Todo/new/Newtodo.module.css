@@ -1,0 +1,54 @@
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-left: 10rem;
+}
+.close_add{
+    position: absolute;
+    top: 0.3rem;
+    right: 12rem;
+    color: red;
+    height: 30px;
+    width: 30px;
+}
+.close_add:hover{
+    
+    color: rgb(205, 38, 38);
+}
+.new_btn{
+    background: none;
+    color: black;
+    width: 70px;
+    position: absolute;
+    bottom: 0.5rem;
+     border: none;
+     color: green;
+    left:120px
+}
+.new_btn:hover{
+    color: green;
+}
+.new_btn:disabled{
+    cursor: not-allowed;
+}
+.error{
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+}
+input,textarea{
+    display: block;
+}
+
+.plus{
+    height: 40px;
+    width: 40px;
+    
+    }
+    .plus:hover{
+        color:rgb(57, 228, 57) ;
+    }
+    
+    

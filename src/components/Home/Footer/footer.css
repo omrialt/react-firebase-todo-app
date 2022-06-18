@@ -1,0 +1,19 @@
+.fot {
+    background-color: black;
+    height: 15vh;
+    width: 100vw;
+    position: absolute;
+    bottom: -20;
+}
+.fot footer span{
+    font-weight: bold;
+      text-decoration: none;
+      color: yellow;
+}
+svg{
+    color: rgb(86, 85, 84);
+}
+svg:hover{
+    color: white;
+    transform: scale(1.2);
+}

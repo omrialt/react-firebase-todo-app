@@ -1,0 +1,46 @@
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-left: 10rem;
+}
+.close_add{
+    position: absolute;
+    top: 0.3rem;
+    right: 12rem;
+    color: red;
+    height: 30px;
+    width: 30px;
+}
+.close_add:hover{
+    
+    color: rgb(205, 38, 38);
+}
+.new_btn{
+    background: rgb(177, 230, 177);
+    color: black;
+    width: 70px;
+    position: absolute;
+     bottom: 1rem;
+     border-radius: 8px;
+     border: none;
+     left:120px
+}
+.new_btn:hover{
+    background-color:rgb(57, 228, 57) ;
+    color: white;
+}
+.new_btn:disabled{
+    background-color: rgb(199, 192, 184);
+    color: rgb(47, 44, 41);
+    cursor:not-allowed ;
+}
+.error{
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+}
+input,textarea{
+    display: block;
+}

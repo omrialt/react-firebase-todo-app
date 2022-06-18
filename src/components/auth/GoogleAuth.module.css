@@ -1,0 +1,55 @@
+.login {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .login__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #dcdcdc;
+    padding: 30px;
+  }
+  .login__textBox {
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .login__btn {
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border: none;
+    color: white;
+    background-color: black;
+  }
+  .login__google {
+    background-color: #34A853;
+  }
+  .login div {
+    margin-top: 7px;
+  }
+  .login__btn:hover {
+    background-color: rgb(43, 41, 41);
+  }
+  .login__google:hover{
+    background-color: #7cbb00;
+  }
+  .change:hover{
+    color: rgb(92, 245, 128);
+  }
+  .error{
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+}
+.login__btn:disabled{
+  background-color: rgb(102, 101, 99);
+  cursor: not-allowed;
+  color: red;
+}
+.google_logo{
+  color: white;
+}
