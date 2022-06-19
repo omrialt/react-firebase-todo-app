@@ -105,7 +105,6 @@ const ChangeTodo = (props) => {
           style={{
             width: "25rem",
             height: "24rem",
-            margin: "6px",
             border: "none",
           }}
         >
