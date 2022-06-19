@@ -100,98 +100,94 @@ const ChangeTodo = (props) => {
 
   return (
     <Modal onClose={props.onClose}>
-      <div className={classes.centered}>
-        <form method="POST" onSubmit={submitFormHandler}>
-          <Card
-            style={{
-              width: "30rem",
-              height: "24rem",
-              margin: "6px",
-              border: "none",
-            }}
-          >
-            <div>
-              <X onClick={props.onClose} className={classes.close_add} />
-            </div>
-            <Card.Body>
-              <Card.Title>Change todo {props.title}</Card.Title>
-              <Card.Title>
-                <input
-                  id="title"
-                  name="title"
-                  type="text"
-                  min="2"
-                  required
-                  placeholder="Title"
-                  ref={titleInputRef}
-                  onInput={titleChangeHandler}
-                />
-                {errorTitle && (
-                  <span className={classes.error}>{errorTitle.message}</span>
-                )}
-              </Card.Title>
-              <Card.Title>
-                <textarea
-                  rows="2"
-                  id="description"
-                  name="description"
-                  type="text"
-                  min="2"
-                  required
-                  placeholder="Description"
-                  ref={descriptionInputRef}
-                  onInput={descChangeHandler}
-                />
-                {errorDescription && (
-                  <span className={classes.error}>
-                    {errorDescription.message}
-                  </span>
-                )}
-              </Card.Title>
-              <Card.Title>
-                <label htmlFor="startAt">Start at:</label>
-                <input
-                  id="StartAt"
-                  name="StartAt"
-                  type="datetime-local"
-                  ref={startedAtInputRef}
-                  onInput={dateStartChangeHandler}
-                />
-                {errorDateStart && (
-                  <span className={classes.error}>
-                    {errorDateStart.message}
-                  </span>
-                )}
-              </Card.Title>
-              <Card.Title>
-                <label htmlFor="endUntil">End Until:</label>
-                <input
-                  id="EndUntil"
-                  name="EndUntil"
-                  type="datetime-local"
-                  ref={endUntilInputRef}
-                  onInput={dateEndChangeHandler}
-                />
-                {errorDateEnd && (
-                  <span className={classes.error}>{errorDateEnd.message}</span>
-                )}
-              </Card.Title>
-              {errorDateRange && (
-                <span className={classes.error}>{errorDateRange.message}</span>
+      <form method="POST" onSubmit={submitFormHandler}>
+        <Card
+          style={{
+            width: "25rem",
+            height: "24rem",
+            margin: "6px",
+            border: "none",
+          }}
+        >
+          <div>
+            <X onClick={props.onClose} className={classes.close_add} />
+          </div>
+          <Card.Body>
+            <Card.Title>Change todo {props.title}</Card.Title>
+            <Card.Title>
+              <input
+                id="title"
+                name="title"
+                type="text"
+                min="2"
+                required
+                placeholder="Title"
+                ref={titleInputRef}
+                onInput={titleChangeHandler}
+              />
+              {errorTitle && (
+                <span className={classes.error}>{errorTitle.message}</span>
               )}
-            </Card.Body>
-            <div className={classes.centered}>
-              <button
-                className={classes.new_btn}
-                disabled={isDisabled}
-                type="submit"
-              >
-                Change
-              </button>
-            </div>
-          </Card>
-        </form>
-      </div>
+            </Card.Title>
+            <Card.Title>
+              <textarea
+                rows="2"
+                id="description"
+                name="description"
+                type="text"
+                min="2"
+                required
+                placeholder="Description"
+                ref={descriptionInputRef}
+                onInput={descChangeHandler}
+              />
+              {errorDescription && (
+                <span className={classes.error}>
+                  {errorDescription.message}
+                </span>
+              )}
+            </Card.Title>
+            <Card.Title>
+              <label htmlFor="startAt">Start at:</label>
+              <input
+                id="StartAt"
+                name="StartAt"
+                type="datetime-local"
+                ref={startedAtInputRef}
+                onInput={dateStartChangeHandler}
+              />
+              {errorDateStart && (
+                <span className={classes.error}>{errorDateStart.message}</span>
+              )}
+            </Card.Title>
+            <Card.Title>
+              <label htmlFor="endUntil">End Until:</label>
+              <input
+                id="EndUntil"
+                name="EndUntil"
+                type="datetime-local"
+                ref={endUntilInputRef}
+                onInput={dateEndChangeHandler}
+              />
+              {errorDateEnd && (
+                <span className={classes.error}>{errorDateEnd.message}</span>
+              )}
+            </Card.Title>
+            {errorDateRange && (
+              <span className={classes.error}>{errorDateRange.message}</span>
+            )}
+          </Card.Body>
+          <div className={classes.centered}>
+            <button
+              className={classes.new_btn}
+              disabled={isDisabled}
+              type="submit"
+            >
+              Change
+            </button>
+          </div>
+        </Card>
+      </form>
     </Modal>
   );
 };
