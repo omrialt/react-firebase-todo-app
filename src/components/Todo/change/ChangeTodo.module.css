@@ -1,3 +1,4 @@
+
 .close_add{
     position: absolute;
     top: 0.3rem;
@@ -36,4 +37,9 @@
 }
 input,textarea{
     display: block;
+}
+@media only screen and (max-width:768px) {
+    .close_add{
+        right: 4rem;
+    }
 }
