@@ -82,6 +82,7 @@ const registerWithEmailAndPassword = async (email, password) => {
       email,
     });
     localStorage.setItem("id", user.uid);
+window.location.reload();
   } catch (err) {
     console.error(err);
     alert(err.message);
